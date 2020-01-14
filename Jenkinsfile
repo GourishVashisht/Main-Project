@@ -1,7 +1,5 @@
 pipeline {
-    agent {	
-		any
-	}
+    agent any
 	
     stages {
 		stage('Project One'){
@@ -12,11 +10,6 @@ pipeline {
 		stage('Project Two'){
 			steps{
 				build job: 'project-two'
-			} 
-		}
-		stage('Project Three'){
-			steps{
-				build job: 'project three'
 			} 
 		}
 	}
