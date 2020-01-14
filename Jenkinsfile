@@ -4,12 +4,12 @@ pipeline {
     stages {
 		stage('Project One'){
 			steps{
-				build job: 'project-one'
+				build job: 'project one'
 			}
 		}
 		stage('Project Two'){
 			steps{
-				build job: 'project-two'
+				build job: 'project two'
 			} 
 		}
 	}
