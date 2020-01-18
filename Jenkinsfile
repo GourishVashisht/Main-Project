@@ -25,7 +25,7 @@ pipeline {
 				echo "${NAME}"
 				build job: 'project two',
 				parameters: [
-					[$class: 'StringParameterValue', name: 'MY_NAME', value: "${STRING_VALUE}"]
+					[$class: 'StringParameterValue', name: 'MY_NAME', value: "${NAME}"]
 				]
 			} 
 		}
