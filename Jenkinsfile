@@ -13,7 +13,7 @@ pipeline {
     stages {
 		stage('Project One'){
 			steps{
-				echo "${STRING_VALUE}"
+				echo "${STRING}"
 				build job: 'project one',
 				parameters: [
 					[$class: 'StringParameterValue', name: 'STRING_VALUE', value: "${STRING}"]
